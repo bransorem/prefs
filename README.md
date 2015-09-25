@@ -28,17 +28,12 @@ $ chsh -s /bin/zsh
 
 ## Taps
 
-    $ brew tap homebrew/php
     $ brew tap homebrew/services
-
-## Install JVM
-
-[Download](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## Casks
 
 ```
-$ brew cask install atom jing cyberduck imageoptim github firefox kitematic macdown namechanger sequel-pro vagrant virtualbox vlc skitch dropbox
+$ brew cask install atom cyberduck imageoptim github firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre cleanmymac duet evernote macpaw-gemini jump-desktop iterm2 little-snitch proxpn techstoreclub-simple-comic sketch transmission unrarx the-unarchiver
 $ brew cask cleanup
 ```
 
@@ -49,54 +44,10 @@ $ brew cask cleanup
 ## Brews
 
 ```
-$ brew install boost boot2docker cmake php53 php53-apc php53-mcrypt php53-memcached php53-xdebug composer curl docker elasticsearch git go httpie imagemagick jruby libmemcached libpng libssh2 libyaml mcrypt memcached mongodb mysql openssl  phpunit pkg-config qt rbenv redis rethinkdb sqlite wget
+$ brew install boost cmake curl docker elasticsearch git go httpie imagemagick libssh2 libyaml mcrypt mongodb openssl pkg-config rbenv redis rethinkdb sqlite wget
 $ brew cleanup
 ```
 
 # Copy Zsh settings
 
     prefs/zsh/*
-
-
-## PHP.ini
-
-/etc/php.ini
-
-    upload_max_filesize = 150M
-    mysql.default_socket = /tmp/mysql.sock
-
-## MySQL config
-
-[Jerry's my.cnf](https://gist.githubusercontent.com/geraldclark/b841b36807aa5b761530/raw/ff447b0f852dcf81635713075be0c51bf6a85f7b/.my.cnf)
-
-    $ brew services start mysql
-
-## Apache Config
-
-### /etc/apache2/httpd.conf
-
-Add `LoadModules`
-
-    <Directory />
-        #AllowOverride none
-        #Require all denied
-    </Directory>
-
-
-    # Virtual hosts
-    Include /private/etc/apache2/extra/httpd-vhosts.conf
-
-### /etc/apache2/extra/httpd-userdir.conf
-
-    Include /private/etc/apache2/users/*.conf
-
-### /etc/apache2/extra/httpd-vhosts.conf
-
-Copy from /apache/
-
-
-## Add User to www group
-
-    $ sudo dseditgroup -o edit -a <USERNAME> -t user www
-    $ sudo dseditgroup -o edit -a <USERNAME> -t user wheel
-
