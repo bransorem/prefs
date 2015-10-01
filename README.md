@@ -48,6 +48,14 @@ $ brew install boost cmake curl docker elasticsearch git go httpie imagemagick l
 $ brew cleanup
 ```
 
+## OpenCV
+
+```
+$ brew tap homebrew/science
+$ brew install opencv
+$ brew cleanup
+```
+
 # Copy Zsh settings
 
     prefs/zsh/*
