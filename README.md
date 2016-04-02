@@ -1,3 +1,9 @@
+# Installation
+
+    source <(curl -s https://raw.githubusercontent.com/bransorem/prefs/master/install.sh)
+
+
+
 ## Prezto
 
 [Installation Instructions](https://github.com/sorin-ionescu/prezto)
