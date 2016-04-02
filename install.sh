@@ -46,3 +46,8 @@ brew install opencv
 # brew cleanup
 brew cleanup
 brew cask cleanup
+
+# iterm2 prefs
+cp $HOME/code/prefs/iterm2.xml $HOME/Documents/iTerm/com.googlecode.iterm2.plist
+
+source $HOME/.zpreztorc

@@ -1,8 +1,9 @@
 # Installation
 
-    source <(curl -s https://raw.githubusercontent.com/bransorem/prefs/master/install.sh)
+    curl -s https://raw.githubusercontent.com/bransorem/prefs/master/install.sh | sh
 
 
+# Manual Installation
 
 ## Prezto
 
