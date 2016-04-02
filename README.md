@@ -12,6 +12,18 @@ $ setopt EXTENDED_GLOB
 $ chsh -s /bin/zsh
 ```
 
+## Get this repo
+
+    $ mkdir code && cd code
+    $ curl -Lk https://github.com/bransorem/prefs/archive/master.zip > prefs.zip
+    $ unzip -a prefs.zip && rm -f prefs.zip
+    $ cd prefs
+
+## Copy Zsh settings
+
+    $ ln -s ~/code/prefs/zsh/zpreztorc ~/.zpreztorc
+    $ ln -s ~/code/prefs/zsh/zprofile ~/.zprofile
+
 ## Homebrew
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -22,9 +34,7 @@ $ chsh -s /bin/zsh
 
 ## NVM
 
-    $ brew install nvm
-
-<strike>curl https://raw.github.com/creationix/nvm/master/install.sh | sh</strike>
+    $ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 ## Taps
 
@@ -33,13 +43,9 @@ $ chsh -s /bin/zsh
 ## Casks
 
 ```
-$ brew cask install atom cyberduck imageoptim github-desktop firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre duet evernote macpaw-gemini jump-desktop iterm2 little-snitch licecap proxpn techstoreclub-simple-comic sketch transmission unrarx the-unarchiver google-chrome alfred qlmarkdown 1password
+$ brew cask install atom cyberduck imageoptim github-desktop firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre duet evernote macpaw-gemini jump-desktop iterm2 little-snitch proxpn  techstoreclub-simple-comic sketch transmission unrarx the-unarchiver google-chrome alfred qlmarkdown 1password
 $ brew cask cleanup
 ```
-
-## Install Sublime Text
-
-    $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 ## Brews
 
@@ -55,7 +61,3 @@ $ brew tap homebrew/science
 $ brew install opencv
 $ brew cleanup
 ```
-
-# Copy Zsh settings
-
-    prefs/zsh/*
