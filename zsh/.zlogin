@@ -1,1 +1,0 @@
-/Users/bsorem/.zprezto/runcoms/zlogin
