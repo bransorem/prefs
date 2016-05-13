@@ -68,3 +68,23 @@ $ brew tap homebrew/science
 $ brew install opencv
 $ brew cleanup
 ```
+
+## Atom Plugins
+
+```
+atom-beautify
+color-picker
+emmet
+highlight-line
+linter
+linter-eslint
+minimap
+pigments
+tabs-to-spaces
+tool-bar
+tool-bar-main
+simple-drag-drop-text
+docblockr
+auto-update-packages
+file-icons
+```
