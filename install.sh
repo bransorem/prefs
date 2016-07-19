@@ -31,10 +31,13 @@ if [[ "$(uname)" = "Darwin" ]]; then
   brew tap homebrew/services
 
   ## Casks
-  brew cask install atom cyberduck imageoptim github-desktop firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre duet evernote macpaw-gemini jump-desktop iterm2 little-snitch proxpn  techstoreclub-simple-comic sketch transmission unrarx the-unarchiver google-chrome alfred qlmarkdown 1password
+  brew cask install atom cyberduck imageoptim github-desktop firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre duet evernote macpaw-gemini jump-desktop iterm2 little-snitch proxpn  techstoreclub-simple-comic sketch transmission unrarx the-unarchiver google-chrome alfred qlmarkdown 1password bettertouchtool gitkraken vivaldi
+
+  ## Quicklook plugins
+  brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
   ## Brews
-  brew install boost cmake curl docker elasticsearch git go httpie imagemagick libssh2 libyaml mcrypt mongodb openssl pkg-config rbenv redis rethinkdb sqlite wget
+  brew install boost cmake curl docker elasticsearch git go httpie imagemagick keybase libssh2 libyaml mcrypt mongodb numpy opencv openssl pkg-config rbenv redis rethinkdb sqlite wget
 
   ## OpenCV
   brew tap homebrew/science
