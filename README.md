@@ -50,20 +50,35 @@ $ chsh -s /bin/zsh
 ## Casks
 
 ```
-$ brew cask install atom cyberduck imageoptim github-desktop firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre duet evernote macpaw-gemini jump-desktop iterm2 little-snitch proxpn  techstoreclub-simple-comic sketch transmission unrarx the-unarchiver google-chrome alfred qlmarkdown 1password
+$ brew cask install 1password adobe-creative-cloud alfred atom \
+    bettertouchtool bartender calibre cleanmymac cyberduck \
+    discord dropbox duet firefox github-desktop gitkraken google-chrome \
+    handbrake hyperterm imageoptim jump-desktop little-snitch lumen \
+    macdown macpaw-gemini namechanger private-internet-access proxpn \
+    sketch skitch techstoreclub-simple-comic transmission the-unarchiver \
+    unrarx vagrant virtualbox vivaldi vlc
 $ brew cask cleanup
 ```
+
+## App Store
+
+- Parcel
+- Paste
 
 ## Quicklook plugins
 
 ```
-$ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+$ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
+    qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook \
+    suspicious-package
 ```
 
 ## Brews
 
 ```
-$ brew install boost cmake curl docker elasticsearch git go httpie imagemagick libssh2 libyaml mcrypt mongodb openssl pkg-config rbenv redis rethinkdb sqlite wget
+$ brew install boost cmake curl docker elasticsearch git go httpie \
+    imagemagick keybase libssh2 libyaml mcrypt mongodb numpy \
+    openssl pkg-config rbenv redis rethinkdb sqlite wget
 $ brew cleanup
 ```
 

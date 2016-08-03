@@ -29,26 +29,33 @@ if [[ "$(uname)" = "Darwin" ]]; then
   brew install caskroom/cask/brew-cask
   ## Taps
   brew tap homebrew/services
+  brew tap homebrew/science
 
   ## Casks
-  brew cask install atom cyberduck imageoptim github-desktop firefox macdown namechanger vagrant virtualbox vlc skitch dropbox bartender calibre duet evernote macpaw-gemini jump-desktop iterm2 little-snitch proxpn  techstoreclub-simple-comic sketch transmission unrarx the-unarchiver google-chrome alfred qlmarkdown 1password bettertouchtool gitkraken vivaldi
+  brew cask install 1password adobe-creative-cloud alfred atom \
+      bettertouchtool bartender calibre cleanmymac cyberduck \
+      discord dropbox duet firefox github-desktop gitkraken google-chrome \
+      handbrake hyperterm imageoptim jump-desktop little-snitch lumen \
+      macdown macpaw-gemini namechanger private-internet-access proxpn \
+      sketch skitch techstoreclub-simple-comic transmission the-unarchiver \
+      unrarx vagrant virtualbox vivaldi vlc
 
   ## Quicklook plugins
-  brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+  brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
+      qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook \
+      suspicious-package
 
   ## Brews
-  brew install boost cmake curl docker elasticsearch git go httpie imagemagick keybase libssh2 libyaml mcrypt mongodb numpy opencv openssl pkg-config rbenv redis rethinkdb sqlite wget
-
-  ## OpenCV
-  brew tap homebrew/science
-  brew install opencv
+  brew install boost cmake curl docker elasticsearch git go httpie \
+      imagemagick keybase libssh2 libyaml mcrypt mongodb numpy opencv \
+      openssl pkg-config rbenv redis rethinkdb sqlite wget
 
   # brew cleanup
   brew cleanup
   brew cask cleanup
 
-  # iterm2 prefs
-  cp $HOME/code/prefs/iterm2.xml $HOME/Documents/iTerm/com.googlecode.iterm2.plist
+  # hyperterm prefs
+  ln -s $HOME/code/prefs/hyperterm.js $HOME/.hyperterm.js
 else
   # linux
   apt-get update
