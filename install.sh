@@ -36,8 +36,8 @@ if [[ "$(uname)" = "Darwin" ]]; then
       bettertouchtool bartender calibre cleanmymac cyberduck \
       discord dropbox duet firefox github-desktop gitkraken google-chrome \
       handbrake hyperterm imageoptim jump-desktop little-snitch lumen \
-      macdown macpaw-gemini namechanger private-internet-access proxpn \
-      sketch skitch techstoreclub-simple-comic transmission the-unarchiver \
+      macdown macpaw-gemini namechanger proxpn sketch skitch \
+      techstoreclub-simple-comic transmission tunnelblick the-unarchiver \
       unrarx vagrant virtualbox vivaldi vlc
 
   ## Quicklook plugins
