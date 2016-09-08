@@ -43,6 +43,14 @@ $ chsh -s /bin/zsh
 
     $ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
+## [OPTIONAL] Set NPM init script:
+
+Create GitHub [access token](https://github.com/settings/tokens).
+
+Add token to Keychain Access (name it 'npm-init').
+
+    $ npm config set init-module ~/code/prefs/node/npm-init.js
+
 ## Taps
 
     $ brew tap homebrew/services
@@ -50,13 +58,23 @@ $ chsh -s /bin/zsh
 ## Casks
 
 ```
-$ brew cask install 1password adobe-creative-cloud alfred atom \
-    bettertouchtool bartender calibre cleanmymac cyberduck \
-    discord dropbox duet firefox github-desktop gitkraken google-chrome \
-    handbrake hyperterm imageoptim jump-desktop little-snitch lumen \
-    macdown macpaw-gemini namechanger proxpn sketch skitch \
+$ brew cask install 1password \
+    adobe-creative-cloud alfred atom \
+    bettertouchtool bartender \
+    calibre cleanmymac cyberduck \
+    discord dropbox duet \
+    firefox \
+    gemini github-desktop gitkraken google-chrome \
+    handbrake hyperterm \
+    imageoptim \
+    jump-desktop \
+    little-snitch lumen \
+    macdown \
+    namechanger \
+    sketch skitch \
     techstoreclub-simple-comic transmission tunnelblick the-unarchiver \
-    unrarx vagrant virtualbox vivaldi vlc
+    unrarx \
+    vagrant virtualbox vivaldi vlc
 $ brew cask cleanup
 ```
 

@@ -16,9 +16,11 @@ curl -Lk https://github.com/bransorem/prefs/archive/master.zip > prefs.zip
 unzip -a prefs.zip && rm -f prefs.zip
 cd prefs
 
+PREFS=$HOME/$CODEDIR/prefs
+
 ## Copy Zsh settings
-ln -s $HOME/code/prefs/zsh/zpreztorc $HOME/.zpreztorc
-ln -s $HOME/code/prefs/zsh/zprofile $HOME/.zprofile
+ln -s $PREFS/zsh/zpreztorc $HOME/.zpreztorc
+ln -s $PREFS/zsh/zprofile $HOME/.zprofile
 
 ## MAC
 if [[ "$(uname)" = "Darwin" ]]; then
@@ -32,13 +34,23 @@ if [[ "$(uname)" = "Darwin" ]]; then
   brew tap homebrew/science
 
   ## Casks
-  brew cask install 1password adobe-creative-cloud alfred atom \
-      bettertouchtool bartender calibre cleanmymac cyberduck \
-      discord dropbox duet firefox github-desktop gitkraken google-chrome \
-      handbrake hyperterm imageoptim jump-desktop little-snitch lumen \
-      macdown macpaw-gemini namechanger proxpn sketch skitch \
+  brew cask install 1password \
+      adobe-creative-cloud alfred atom \
+      bettertouchtool bartender \
+      calibre cleanmymac cyberduck \
+      discord dropbox duet \
+      firefox \
+      gemini github-desktop gitkraken google-chrome \
+      handbrake hyperterm \
+      imageoptim \
+      jump-desktop \
+      little-snitch lumen \
+      macdown \
+      namechanger \
+      sketch skitch \
       techstoreclub-simple-comic transmission tunnelblick the-unarchiver \
-      unrarx vagrant virtualbox vivaldi vlc
+      unrarx \
+      vagrant virtualbox vivaldi vlc
 
   ## Quicklook plugins
   brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
@@ -55,7 +67,7 @@ if [[ "$(uname)" = "Darwin" ]]; then
   brew cask cleanup
 
   # hyperterm prefs
-  ln -s $HOME/code/prefs/hyperterm.js $HOME/.hyperterm.js
+  ln -s $PREFS/hyperterm.js $HOME/.hyperterm.js
 else
   # linux
   apt-get update

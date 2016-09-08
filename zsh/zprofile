@@ -14,8 +14,14 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export GOPATH=$HOME/code/go
+export GITHUB_USERNAME=bransorem
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+get_pw() {
+  security 2>&1 >/dev/null find-generic-password -ga $1 \
+  |ruby -e 'print $1 if STDIN.gets =~ /^password: "(.*)"$/'
+}
 
 #
 # Browser
