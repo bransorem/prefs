@@ -1,5 +1,4 @@
 #!/bin/bash
-CODEDIR=code
 
 # install prezto
 zsh
@@ -10,10 +9,16 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 chsh -s /bin/zsh
 
+CODEDIR=code
+
 # get prefs
-mkdir $HOME/$CODEDIR && cd $HOME/$CODEDIR
+cd $HOME
+mkdir $CODEDIR
+cd $CODEDIR
 curl -Lk https://github.com/bransorem/prefs/archive/master.zip > prefs.zip
-unzip -a prefs.zip && rm -f prefs.zip
+unzip -o -a prefs.zip
+rm -f prefs.zip
+mv prefs-master prefs
 cd prefs
 
 PREFS=$HOME/$CODEDIR/prefs
