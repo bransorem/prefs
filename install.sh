@@ -2,6 +2,7 @@
 
 if [[ "$(uname)" = "Darwin" ]]; then
   # mac
+  zsh
 else
   # ubuntu
   apt-get install zsh
