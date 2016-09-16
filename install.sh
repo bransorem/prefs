@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [[ "$(uname)" = "Darwin" ]]; then
+  # mac
+else
+  # ubuntu
+  apt-get install zsh
+fi
+
 # install prezto
 zsh
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
@@ -51,7 +58,7 @@ if [[ "$(uname)" = "Darwin" ]]; then
       jump-desktop \
       little-snitch lumen \
       macdown \
-      namechanger \
+      n namechanger \
       sketch skitch \
       techstoreclub-simple-comic transmission tunnelblick the-unarchiver \
       unrarx \
@@ -75,10 +82,24 @@ if [[ "$(uname)" = "Darwin" ]]; then
   ln -s $PREFS/hyperterm.js $HOME/.hyperterm.js
 else
   # linux
-  apt-get update
-fi
+  # https://blog.microideation.com/2016/08/30/customizing-ubuntu-system/
+  add-apt-repository ppa:ricotz/docky
+  add-apt-repository ppa:synapse-core/ppa
+  apt-add-repository ppa:numix/ppa
+  add-apt-repository ppa:tualatrix/ppa
+  add-apt-repository ppa:noobslab/themes
+  add-apt-repository ppa:shutter/ppa
+  add-apt-repository ppa:webupd8team/atom
 
-## NVM
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+  apt-get update
+  apt-get install conky docky synapse
+  apt-get install numix-icon-theme numix-icon-theme-circle
+  apt-get install ubuntu-tweak
+  apt-get install mbuntu-y-ithemes-v4
+  apt-get install nemo shutter atom
+
+  ## NVM
+  curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+fi
 
 source $HOME/.zpreztorc
