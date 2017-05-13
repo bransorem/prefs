@@ -7,16 +7,32 @@
 
 set -k
 
+
 #
 # Prefs
 #
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
-export ANDROID_HOME=/usr/local/opt/android-sdk
+# export ANDROID_HOME=/usr/local/opt/android-sdk
 export GOPATH=$HOME/code/go
+# export RUSTPATH=$HOME/.cargo/env
 export GITHUB_USERNAME=bransorem
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+
+# # ruby
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# # ruby
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# # node
+# export NVM_DIR="/Users/bransorem/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+#
+# # source $RUSTPATH
+# # python
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+# # java
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 
 get_pw() {
   security 2>&1 >/dev/null find-generic-password -ga $1 \
@@ -100,6 +116,3 @@ alias cgs="clear && git status -s"
 
 alias getdate='date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s" | pbcopy'
 alias list="ls -go | awk '{print \$7;}'"
-
-# RVM
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
