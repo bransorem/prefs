@@ -6,17 +6,22 @@
 #
 
 set -k
-
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 #
 # Prefs
 #
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 # export ANDROID_HOME=/usr/local/opt/android-sdk
 export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH:/usr/local/opt/go/libexec/bin
 # export RUSTPATH=$HOME/.cargo/env
 export GITHUB_USERNAME=bransorem
+
+#alias python='python3'
+alias oms='cd ~/Google\ Drive/School/GaTech/CS8803GA'
 
 # # ruby
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

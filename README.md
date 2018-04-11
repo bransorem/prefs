@@ -60,20 +60,17 @@ Add token to Keychain Access (name it 'npm-init').
 ```
 $ brew cask install 1password \
     adobe-creative-cloud alfred atom \
-    bettertouchtool bartender \
-    calibre cleanmymac cyberduck \
-    discord dropbox duet \
-    firefox \
-    gemini github-desktop gitkraken google-chrome \
-    handbrake hyperterm \
-    imageoptim \
-    jump-desktop \
-    little-snitch lumen \
-    macdown \
-    namechanger \
-    sketch skitch \
-    techstoreclub-simple-comic transmission tunnelblick the-unarchiver \
-    unrarx \
+    bettertouchtool bartender brave \
+    calibre cleanmymac \
+    discord dropbox \
+    github-desktop google-chrome \
+    handbrake hyper \
+    java java7 \
+    keybase \
+    little-snitch \
+    master-password \
+    n namechanger \
+    transmission tunnelblick the-unarchiver \
     vagrant virtualbox vivaldi vlc
 $ brew cask cleanup
 ```
@@ -94,9 +91,9 @@ $ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
 ## Brews
 
 ```
-$ brew install boost cmake curl docker elasticsearch git go httpie \
-    imagemagick keybase libssh2 libyaml mcrypt mongodb numpy \
-    openssl pkg-config rbenv redis rethinkdb sqlite wget
+$ brew install boost cmake curl dnscrypt-proxy elasticsearch ffmpeg gcc gdb gdbm git go gnutls httpie \
+    imagemagick keybase libssh2 libyaml mcrypt mariadb mcrypt mhash numpy opencv \
+    openssl python python3 pkg-config redis sqlite tree wget wireshark youtube-dl
 $ brew cleanup
 ```
 

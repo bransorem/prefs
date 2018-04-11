@@ -70,14 +70,35 @@ if [[ "$(uname)" = "Darwin" ]]; then
       vagrant virtualbox vivaldi vlc
 
   ## Quicklook plugins
-  brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
-      qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook \
-      suspicious-package
+  brew cask install 1password     calibre                     github-desktop              \
+      little-snitch               qlimagesize                 sublime-text                vcv-rack \
+      adobe-creative-cloud        cleanmymac                  google-chrome               \
+      macdown                     qlmarkdown                  suspicious-package          virtualbox \
+      alfred                      coconutbattery              google-drive                \
+      mactex                      qlprettypatch               texmaker                    virtualbox-extension-pack \
+      android-platform-tools      cyberduck                   handbrake                   \
+      manta                       qlstephen                   texshop                     visual-studio-code \
+      atom                        discord                     hex-fiend                   \
+      master-password             quicklook-csv               the-unarchiver              vivaldi \
+      bartender                   docker                      hyper                       \
+      namechanger                 quicklook-json              transmission                vlc \
+      bettertouchtool             dropbox                     imageoptim                  \
+      origami-studio              sequel-pro                  transmit                    wacom-intuos-tablet \
+      betterzipql                 etcher                      java                        \
+      postman                     sketch                      tunnelblick                 webpquicklook \
+      brave                       firefox                     keybase                     \
+      qlcolorcode                 steam                       vagrant                     wireshark
 
   ## Brews
-  brew install boost cmake curl dnscrypt-proxy elasticsearch ffmpeg gcc gdb gdbm git go gnutls httpie \
-      imagemagick keybase libssh2 libyaml mcrypt mariadb mcrypt mhash numpy opencv \
-      openssl python python3 pkg-config redis sqlite tree wget wireshark
+  brew install adns direnv gcc gnupg imagemagick libffi libtasn1 luajit \
+      node pcre sqlite xz awscli dnscrypt-proxy gdb gnutls isl libgcrypt libtiff \
+      mariadb npth pinentry ssdeep youtube-dl boost dnsmasq gdbm go jpeg \
+      libgpg-error libtool mcrypt numpy pkg-config tree zmap c-ares dnstwist \
+      geoip highlight json-c libksba libunistring mhash opencv python watchman \
+      cmake eigen gettext htop lame libmpc libusb minisign openexr python3 wget \
+      curl fd git httpie ldns libpng libyaml mpfr openssl readline wireshark daq \
+      ffmpeg glib icu4c libassuan libsodium llvm netcat redis x264 dbus \
+      freetype gmp ilmbase libdnet libssh2 lua nettle p11-kit snort xvid
 
   # brew cleanup
   brew cleanup
